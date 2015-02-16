@@ -1,0 +1,40 @@
+var a,b,c,d:integer;
+	e,f,g,h:string;
+begin
+	a:=5+4;
+	e:='string';
+	f:=e+' test';
+	if (5+4)/2=9*2 and e>=f or e<>'test' and f<=e
+	then
+		write(a+5)
+	else
+		write(e);
+	for b:=0 to 10 do
+		while b>10 and (a)<(100)
+		do
+		read (d);
+end.
+
+var a, b:string;
+    c, d:integer;
+begin
+    read(a);
+    c:=12; d:=4524;
+
+    if (a)=(b) then
+        write('a=b')
+    else
+        write('a <> b');
+
+     for c:=0 to d do
+     begin
+        while (d) <> (0) do
+        begin
+            d:=d/2;
+            write('a <> b');
+        end;
+        d:=334;
+     end;
+
+     write('it is ok');
+end.

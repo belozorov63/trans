@@ -1,0 +1,125 @@
+body {
+	font-family: "helvetica",sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+.topbar {
+	height: 60px;
+	background-color: #FBFBFB;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	border-bottom: 1px solid #DBDBDB;
+	width: 100%;
+	line-height:60px;
+}
+.topbar-left a {
+	border-right: 1px solid #DBDBDB;
+	float: left;
+}
+.topbar-left a div, .sidebar ul>li>a div {
+	float: left;
+}
+.topbar-right a {
+	border-left: 1px solid #DBDBDB;
+	float: right;
+}
+.topbar-right a div, .sidebar-right ul>li>a div {
+	float:right;	
+}
+div[class*="sidebar"] a {
+	display:block;
+	line-height:60px;
+	height:60px;
+	width:100%;
+	border-bottom: 1px solid #DBDBDB;
+}
+div[class*="sidebar"] ul>li {
+	width:300px;
+}
+.sidebar {
+	position: fixed;
+	top: 60px;
+	left: 0px;
+	background-color: #FBFBFB;
+	border: 1px solid #DBDBDB;
+	overflow-y: auto;
+	overflow-x: hidden;
+	bottom: 0px;
+	display: inline-block;
+
+}
+.sidebar-right {
+
+}
+
+
+.container {
+}
+.content {
+}
+.footer {
+}
+.z-max {
+	z-index: 9999;
+}
+a {
+	text-decoration: none;
+	font-size:14px;
+}
+
+
+.no-icon-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.sprite {
+	background-image: url(sprite.png);
+	background-repeat: no-repeat;
+}
+div[class*="icon-"] {
+	width: 60px;
+	height: 60px;
+}
+.link-block a, .link-block a input[type="text"] {
+	color: #727272;
+	background-color: #FBFBFB;
+}
+.link-block a:hover, .link-block a:hover input[type="text"] {
+	color: #FBFBFB;
+	background-color: #727272;
+}
+input[type="text"] {
+	border:0px;
+	font-size:14px;
+	background-color:transparent;
+}
+a .icon-menu {
+	background-position: 15px 15px;
+}
+a:hover .icon-menu, a:hover.active .icon-menu {
+	background-position: 15px -45px;
+	background-color: #727272;
+}
+a.active .icon-menu {
+	background-position: 15px -105px;
+}
+a div.icon-logo {
+	background-position: -30px 0px;
+	width: 150px;
+	background-color:#FBFBFB;
+}
+a .icon-login {
+	background-position: 15px 15px;
+}
+a:hover .icon-login {
+	background-position: 15px -45px;
+	background-color: #727272;
+}
+
+@media only screen and (min-width: 480px) { /* Основной дизайн */ }
+@media only screen and (min-width: 600px) { /* Основной дизайн */ }
+@media only screen and (min-width: 768px) { /* Основной дизайн */ }
+@media only screen and (min-width: 992px) { /* Основной дизайн */ }
+@media only screen and (min-width: 1382px) { /* Основной дизайн */ }

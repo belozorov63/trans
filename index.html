@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Belozorov63.ru</title>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js.js"></script>
+	<script type="text/javascript" src="milan.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$("#start").click(function(){
+				Translator.start ( '#destination', '#log', $("#source").val(), true ,'#debug');
+			});
+		});
+	</script>
+
+	<style>
+		.cssOpacity {
+			filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+			-moz-opacity: 0.5;
+			-khtml-opacity: 0.5;
+			opacity: 0.5;
+			zoom:1;
+		}
+		.trans {
+			width: 100%;
+			position: relative;
+			top: 0px;
+		}
+		#source {
+			width:49%;
+			height: 500px;
+		}
+		#destination {
+			width:49%;
+			height: 500px;
+		}
+		#log {
+			width:100%;
+			height: 100px;
+		}
+		#debug {
+			width:100%;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div class="trans">
+	<textarea id="source">var a,b,c,d:integer;
+	e,f,g,h:string;
+begin
+	a:=5+4;
+	e:='string';
+	f:=e+' test';
+	if (5+4)/2=9*2 and e>=f or e<>'t\'e\'s\'t' and f<=e
+	then
+		write(a+5)
+	else
+		write(e);
+	for b:=0 to 10 do
+		while (b)>(10) and a<100
+		do
+			read (d);
+end.</textarea>
+		<textarea id="destination"></textarea><br>
+		<textarea id="log"></textarea><br>
+<input id="start" type="submit" value="Начать!">
+<br><br><textarea style="display:none;" id="debug"></textarea>
+
+	</div>
+
+</body>
+</html>
+
